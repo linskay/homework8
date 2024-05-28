@@ -39,15 +39,11 @@ public class Main {
         }
         System.out.println();
         System.out.println("Task 4");
-        int[] arr = new int[3];
-        arr[0] = massiveNoName[0];
-        arr[1] = massiveNoName[1];
-        arr[2] = massiveNoName[2];
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] % 2 != 0) {
-                arr[i]++;
+        for (int i = 0; i < massiveNoName.length; i++) {
+            if (massiveNoName[i] % 2 != 0) {
+                massiveNoName[i]++;
             }
         }
-        System.out.print(Arrays.toString(arr));
+        System.out.print(Arrays.toString(massiveNoName));
     }
 }
