@@ -6,16 +6,11 @@ public class Main {
         System.out.println("Привет, наставник!:)");
         System.out.println("Task 1+2");
         int[] massiveNoName = new int[3];
-        int[] arr = new int[3];
-        massiveNoName[0] = 9;
-        arr[0] = massiveNoName[0];
-        massiveNoName[1] = 0;
-        arr[1] = massiveNoName[1];
-        massiveNoName[2] = 7;
-        arr[2] = massiveNoName[2];
+        massiveNoName[0] = 1;
+        massiveNoName[1] = 2;
+        massiveNoName[2] = 3;
         {
             System.out.printf("%s, %s, %s \n", massiveNoName[0], massiveNoName[1], massiveNoName[2]);
-            System.out.println(Arrays.toString(arr)); ///или так? не было условий, можно ли в "[]" выводить
         }
         double[] massiveDouble = {1.57, 7.654, 9.986};
         {
@@ -44,6 +39,10 @@ public class Main {
         }
         System.out.println();
         System.out.println("Task 4");
+        int[] arr = new int[3];
+        arr[0] = massiveNoName[0];
+        arr[1] = massiveNoName[1];
+        arr[2] = massiveNoName[2];
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] % 2 != 0) {
                 arr[i]++;
